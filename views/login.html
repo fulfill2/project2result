@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>노래 가사집 = {{title}}</title>
+	<meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body>
+    <div style="background-image:url('/static/background.jpg')">
+        <a href ="/"><h1>노래가사집 - {{title}}</h1></a>
+            <div id="container2">
+                <div id=box1>
+                    <br>
+                    <ul class="animated infinite bounce">
+                        <img src="/static/fightingKorea.jpg" alt="cheer-up" width="150px">
+                    </ul>
+                </div>
+                <div id=box2>
+                    <h2>{{title}}</h2>
+                        <form action="/login" method="post">
+                            <div id= "buttons">
+                                <p>이름<br><input type="text" name="id" placeholder="username"></p>
+                                <p>비밀번호<br><input type="password" name="password" placeholder="password"></p>
+                                <button type="submit">로그인</button>
+                            </div>
+                            
+                        </form>
+                          {{ message }}
+                </div>
+                <div id=box3><h2>{{title}}</h2>
+
+                </div>
+            </div>
+    </div>
+</body>
+</html>
